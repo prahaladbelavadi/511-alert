@@ -6,4 +6,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<!-- <ion-content>
+  <div class="form-group">
+    <ion-item class="padding">
+      <ion-label position="floating" required class="form-control">
+        Enter your 511 token
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </div>
+  <ion-button expand="block" click="">Submit</ion-button> -->
+
+
+<ion-content>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm" novalidate>
+      <input type="text" ngModel name="token">
+      <button ion-button type="submit">Submit</button>
+  </form>
+</ion-content>
