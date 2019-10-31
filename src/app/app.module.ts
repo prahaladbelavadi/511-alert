@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -19,7 +20,8 @@ import { IonicStorageModule } from '@ionic/storage';
     IonicModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    HttpClient
   ],
   providers: [
     StatusBar,
